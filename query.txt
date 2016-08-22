@@ -1,0 +1,18 @@
+DROP TABLE SINGLEMALTS;
+CREATE TABLE SINGLEMALTS
+(
+DISTILLERY VARCHAR (32) NOT NULL,
+	AGE INT NOT NULL,
+	REGION VARCHAR (16) NOT NULL,
+	PRICE INT NOT NULL,
+PRIMARY KEY (DISTILLERY, AGE)
+);
+INSERT INTO SINGLEMALTS(DISTILLERY,AGE,REGION,PRICE)
+	VALUES 
+('Laphroaig',10,'Islay',100),
+('Laphroaig',15,'Islay',150),
+('Laphroaig',30,'Islay',500),
+('Lagavulin',16,'Islay',100),
+('Oban',14,'Highland',120),
+('Tomatin',12,'Highland',90),
+('Tomatin',14,'Highland',110);
